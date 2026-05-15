@@ -23,7 +23,7 @@ export const createWeather = async (req, res) => {
             condition: weatherData.weather[0].main
         });
 
-        res.status(201).json(newWeather);
+        res.status(201).json(weatherData);
 
     } catch(error) {
 
