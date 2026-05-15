@@ -141,12 +141,12 @@ function App() {
 
       const weather = await fetchWeather(city);
 
-      if (weather.cod === "404") {
+      if (weather.cod === 404) {
         setError("City not found");
         setLoading(false);
         return;
       }
-
+      console.log(weather);
       setWeatherData(weather);
 
       const forecastData = await fetchForecast(city);

@@ -126,23 +126,31 @@ body{
 
 /* FORECAST */
 
-.forecast-container{
-  display:grid;
-
-  grid-template-columns:
-  repeat(auto-fit,minmax(120px,1fr));
-
-  gap:15px;
-
-  margin-top:30px;
+.forecast-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  padding: 10px;
 }
 
-.forecast-card{
-  background:rgba(255,255,255,0.2);
+.forecast-card {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 15px;
+  border-radius: 12px;
+  color: white;
+  min-width: 120px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
 
-  padding:15px;
+.forecast-card h2 {
+  margin: 10px 0;
+}
 
-  border-radius:15px;
+.forecast-card p {
+  font-size: 18px;
 }
 
 /* FOOTER */

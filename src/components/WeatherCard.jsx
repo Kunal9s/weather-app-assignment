@@ -5,10 +5,11 @@ import humidity from "../assets/humidity.png";
 import mist from "../assets/mist.png";
 import rain from "../assets/rain.png";
 import wind from "../assets/wind.png";
+import snow from "../assets/snow.png";
 
 function WeatherCard({ weatherData }) {
 
-  if (!weatherData) {
+  if (!weatherData || !weatherData.weather) {
     return null;
   }
 
@@ -24,6 +25,8 @@ function WeatherCard({ weatherData }) {
     weatherIcon = drizzle;
   } else if (weatherMain === "Mist") {
     weatherIcon = mist;
+  } else if (weatherMain === "Snow") {
+    weatherIcon = snow;
   }
 
   return (
