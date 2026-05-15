@@ -1,5 +1,5 @@
 import Weather from "../models/Weather.js";
-import { getWeatherData } from "../services/weatherService.js";
+import { getWeatherData, getForecastData } from "../services/weatherService.js";
 
 export const createWeather = async (req, res) => {
 
@@ -32,6 +32,20 @@ export const createWeather = async (req, res) => {
         });
     }
 };
+
+export const getForecast = async (req, res) => {
+    try {
+        const { city } = req.body;
+
+        const data = await getForecastData(city);
+
+        res.json(data);
+    } catch (error) {
+        res.status(500).json({
+            message: "Error fetching forecast",
+        });
+    }
+}
 
 export const getAllWeather = async(req, res) => {
 
