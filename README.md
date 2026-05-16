@@ -1,16 +1,52 @@
-# React + Vite
+Weather App
+A full-stack application built using React, Node.js, Express.js, MongoDB Atlas, and OpenWeather API. Users can search for any city to get real-time weather updates with their precise location and additionally they can avail 5-day weather forecast for any city in the world.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features
+• Search weather by city name
+• Real-time temperature display 
+• Wind speed information
+• Humidity details
+• Dynamic weather conditions & icons
+• 5-day weather forecast
+• Current location weather support
+• Weather data stored in MongoDB Atlas
+• Fully deployed frontend & backend
 
-Currently, two official plugins are available:
+Tech Stack
+Frontend
+• React.Js
+• Vite
+• CSS
+Backend
+• Node.js
+• Express.js
+Database
+• MongoDB Atlas
+• Mongoose
+APIs
+• OpenWeather API
+Deployment
+• Vercel (Frontend)
+• Render (Backend)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Installation & Setup
+1. Clone the repository
+   git clone <https://weather-app-assignment-96cwc9xis-kunal-shahs-projects-cc9772bb.vercel.app/>
+2. Install frontend dependencies
+   npm install
+3. Install backend dependencies
+   cd server
+   npm install
 
-## React Compiler
+Run the Application
+1. Start Backend
+   cd server
+   npm run dev
+2. Start Frontend
+   npm run dev
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Author
+Kunal Shah
+Aspiring Full Stack Developer passionate about building scalable and user-friendly web applications.
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
